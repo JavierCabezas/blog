@@ -1,0 +1,23 @@
+title = "Page not found"
+url = "/404"
+layout = "default"
+description = "The page you requested is unfortunately nowhere to be found!"
+hidden = "0"
+
+[blogPosts]
+pageNumber = "{{ :page }}"
+postsPerPage = "10"
+noPostsMessage = "No posts found!"
+sortOrder = "published_at desc"
+categoryPage = "blog/tag"
+postPage = "blog/post"
+==
+<section class="posts-list">
+
+  <h2>The page you requested is unfortunately nowhere to be found!</h2>
+
+  <p class="lead">Instead, here are a few of my latest blog posts:</p>
+
+  {% partial 'blogPostsListRaw' %}
+
+</section>

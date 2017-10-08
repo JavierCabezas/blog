@@ -1,0 +1,44 @@
+/*
+ * Custom Primer variables.
+ */
+
+$container-width: 100%;
+$grid-gutter: 40px;
+
+// Font stack
+$body-font: 'Lato', arial, nimbussansl, liberationsans, freesans, clean, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
+
+// The base body size
+$body-font-size: 14px;
+
+/*
+ * Imports Primer.
+ */
+
+// Global requirements
+@import "../vendor/primer-css/scss/variables";
+@import "../vendor/primer-css/scss/mixins";
+
+// Basecoat
+@import "../vendor/primer-css/scss/normalize";
+@import "../vendor/primer-css/scss/base";
+@import "../vendor/primer-css/scss/type";
+@import "../vendor/primer-css/scss/layout";
+// @import "../vendor/primer-css/scss/forms";
+// @import "../vendor/primer-css/scss/utility";
+
+// Components
+// @import "../vendor/primer-css/scss/alerts";
+// @import "../vendor/primer-css/scss/avatars";
+// @import "../vendor/primer-css/scss/blankslate";
+// @import "../vendor/primer-css/scss/counter";
+@import "../vendor/primer-css/scss/buttons";
+// @import "../vendor/primer-css/scss/menu";
+// @import "../vendor/primer-css/scss/tabnav";
+// @import "../vendor/primer-css/scss/filter-list";
+// @import "../vendor/primer-css/scss/states";
+// @import "../vendor/primer-css/scss/tooltips";
+
+// Utilities
+// @import "../vendor/primer-css/scss/flex-table";
+// @import "../vendor/primer-css/scss/truncate";
