@@ -29,7 +29,7 @@ return [
     |
     */
 
-    'url' => 'http://localhost/october/',
+    'url' => 'http://localhost/blog/',
 
     /*
     |--------------------------------------------------------------------------
@@ -81,7 +81,7 @@ return [
     |
     */
 
-    'key' => 'wn9LOX08FS1bMTh9GLig0W7dm6K0zSLb',
+    'key' => 'meLBbJQkkT7ilTUC4zzsxGjCCWBGuyy3',
 
     'cipher' => 'AES-256-CBC',
 

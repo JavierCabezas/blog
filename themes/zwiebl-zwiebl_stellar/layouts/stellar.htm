@@ -1,0 +1,18 @@
+description = "Stellar OnePage with Smooth Scroll"
+==
+<html>
+<head>
+    {% partial "html_base/meta_head" %}
+</head>
+<body>
+    <div id="wrapper">
+        {% partial "all_pages/header" %}
+        {% partial "home_page/navigation" %}
+        <div id="main">
+            {% page %}
+        </div>
+        {% partial "all_pages/footer" %}
+    </div>
+    {% partial "html_base/scripts" %}
+</body>
+</html>
