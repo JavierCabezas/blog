@@ -27,6 +27,21 @@ postPage = "blog-post"
                 on {{ post.published_at|date('M d, Y') }}
             </p>
             <p class="excerpt">{{ post.summary }}</p>
+            
+            {% if post.featured_images.count %}
+                <div class="featured-images text-center">
+                    {% for image in post.featured_images %}
+                        <p>
+                            <img
+                                data-src="{{ image.filename }}"
+                                src="{{ image.path }}"
+                                alt="{{ image.description }}"
+                                style="max-width: 100%; max-height: 250px;" />
+                        </p>
+                    {% endfor %}
+                </div>
+            {% endif %}
+
             <ul class="actions">
                 <li><a href="{{ post.url }}" class="button">Read more...</a></li>
             </ul>
