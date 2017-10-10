@@ -6,6 +6,8 @@ is_hidden = 0
 [blogPost]
 slug = "{{ :slug }}"
 categoryPage = "blog-category"
+
+[comments]
 ==
 <?php
 function onEnd()
@@ -32,6 +34,9 @@ function onEnd()
         {% endfor %}
     {% endif %}
     on {{ post.published_at|date('M d, Y') }}
+    
+    {% component 'comments' %}
+
 </p>
 
 {% else %}

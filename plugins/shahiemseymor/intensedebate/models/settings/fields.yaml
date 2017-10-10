@@ -1,0 +1,9 @@
+# ===================================
+#  Form Field Definitions
+# ===================================
+
+fields:
+    site_act:
+        label: IntenseDebate site acct:
+        required: true
+        comment: Find your Site key in your www.intensedebate.com control panel.
