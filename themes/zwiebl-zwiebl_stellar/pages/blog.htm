@@ -26,7 +26,7 @@ postPage = "blog-post"
                 {% endfor %}
                 on {{ post.published_at|date('M d, Y') }}
             </p>
-            <p class="excerpt">{{ post.summary }}</p>
+            <p class="excerpt">{{ post.summary|striptags }}</p>
             
             {% if post.featured_images.count %}
                 <div class="featured-images text-center">
